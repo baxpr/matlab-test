@@ -1,4 +1,4 @@
-FROM centos:9
+FROM redhat/ubi9
 
 # Initial system
 # java-1.8.0-openjdk                                 for MCR
