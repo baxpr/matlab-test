@@ -14,7 +14,7 @@ ENV MCR_INHIBIT_CTF_LOCK=1
 ENV MCR_CACHE_ROOT=/tmp
 
 # Matlab executable must be run at build to extract the CTF archive
-RUN run_matlabtest.sh ${MATLAB_RUNTIME} quit
+#RUN run_matlabtest.sh ${MATLAB_RUNTIME} quit
 
 # Entrypoint
 ENTRYPOINT ["run_matlabtest.sh","/opt/matlabruntime/R2023a"]
