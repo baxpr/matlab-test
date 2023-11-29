@@ -10,6 +10,7 @@ ENV PATH=/opt/matlabtest/bin:${PATH}
 
 ENV AGREE_TO_MATLAB_RUNTIME_LICENSE=yes
 ENV MATLAB_RUNTIME=/opt/matlabruntime/R2023a
+ENV MCR_CACHE_ROOT=/tmp/mcr_cache_root
 
 # Matlab executable must be run at build to extract the CTF archive
 RUN run_matlabtest.sh ${MATLAB_RUNTIME} quit
