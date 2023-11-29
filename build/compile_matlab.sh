@@ -12,7 +12,7 @@ mcc -m -C -v ../src/matlabtest.m \
     -d ../bin \
     -R -nojvm \
     -R -nodisplay \
-    -R '-logfile,matlabtest.log' \
+    -R '-logfile,/tmp/matlabtest.log' \
     -R '-startmsg,Starting Runtime' \
     -R '-completemsg,Completed runtime startup' \
 
