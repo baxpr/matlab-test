@@ -8,8 +8,11 @@ COPY src /opt/matlabtest/src
 # Add pipeline to system path
 ENV PATH=/opt/matlabtest/bin:${PATH}
 
+ENV AGREE_TO_MATLAB_RUNTIME_LICENSE=yes
+ENV MATLAB_RUNTIME=/opt/matlabruntime/R2023a
+
 # Matlab executable must be run at build to extract the CTF archive
 #RUN run_matlabtest.sh ${MATLAB_RUNTIME} quit
 
 # Entrypoint
-#ENTRYPOINT ["run_matlabtest.sh","/usr/local/MATLAB/MATLAB_Runtime/R2023a"]
+ENTRYPOINT ["run_matlabtest.sh","/opt/matlabruntime/R2023a"]
