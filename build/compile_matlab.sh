@@ -9,7 +9,12 @@ export PATH=${MATLABROOT}/bin:${PATH}
 mcc -m -C -v ../src/matlabtest.m \
     -N \
     -a ../src \
-    -d ../bin
+    -d ../bin \
+    -R -nojvm \
+    -R -nodisplay \
+    -R '-logfile,matlabtest.log' \
+    -R '-startmsg,Starting Runtime' \
+    -R '-completemsg,Completed runtime startup' \
 
 # We grant lenient execute permissions to the matlab executable and runscript so
 # we don't have hiccups later.
