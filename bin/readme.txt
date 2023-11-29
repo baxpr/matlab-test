@@ -23,7 +23,6 @@ in the MathWorks Documentation Center.
 
 Files to Package for Standalone 
 ================================
--matlabtest.ctf (component technology file)
 -matlabtest 
 -run_matlabtest.sh (shell script for temporarily setting environment variables and 
                     executing the application)

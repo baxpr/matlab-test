@@ -6,13 +6,10 @@
 export MATLABROOT=~/MATLAB/R2023a
 export PATH=${MATLABROOT}/bin:${PATH}
 
-mcc -m -C -v ../src/matlabtest.m \
+mcc -m -v ../src/matlabtest.m \
     -N \
     -a ../src \
     -d ../bin \
-    -R -nojvm \
-    -R -nodisplay \
-    -R '-logfile,/tmp/matlabtest.log' \
     -R '-startmsg,Starting Runtime' \
     -R '-completemsg,Completed runtime startup' \
 
